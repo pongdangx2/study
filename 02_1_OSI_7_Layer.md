@@ -136,7 +136,7 @@
 # 7 Layer - Application Layer (응용 계층)
 ### Application Layer?
 
-* 사용자 간 혹은 응용 프로세스 간의 정보 교환 담당
+* 응용 프로세스를 통해 응용 서비스 수행
 * 대표 프로토콜
 
 > HTTP, FTP, SMTP, POP3, Telnet 등등..
