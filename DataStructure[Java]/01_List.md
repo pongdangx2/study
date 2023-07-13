@@ -31,6 +31,16 @@ int index = list.indexOf("A");
 
 <br>
 
+## 값 수정
+
+* set()
+
+```
+list.set(0, "A");  // 0번째 인덱스의 값을 A로 수정
+```
+
+<br>
+
 ## Sorting
 
 * Collections.sort()
