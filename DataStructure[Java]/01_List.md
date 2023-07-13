@@ -28,3 +28,29 @@ boolean delYn = list.remove("B");  // true;
 ```
 int index = list.indexOf("A");
 ```
+
+<br>
+
+## Sorting
+
+* Collections.sort()
+
+```
+public static  void sort(List<T> list)
+public static  void sort(List<T> list, Comparator<? super T> c)
+```
+
+* java8 이후에선 List.sort 사용 가능
+
+```
+default void sort(Comparator<? super E> c)
+```
+
+* 예시
+```
+Collections.sort(list);  // 오름차순 정렬
+Collections.sort(list, Collections.reverseOrder()); // 내림차순 정렬
+
+list.sort(Collections.naturalOrder());  // 오름차순 정렬
+list.sort(Collections.reverseOrder());  // 내림차순 정렬
+```
