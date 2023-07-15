@@ -27,6 +27,7 @@ PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOr
 |---|---|
 |poll()|첫번째 값을 반환 (비어있다면 null)|
 |remove()|첫번째 값을 제거|
+|remove(e)|e 값을 제거|
 |peek()|첫번째 값 반환|
 
 <br>
