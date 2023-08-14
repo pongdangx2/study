@@ -24,7 +24,7 @@
 |Method|Description|
 |---|---|
 |HttpSession getSession() | 현재 Request와 연관된 세션을 리턴, 없을 땐 새로 생성하여 리턴|
-|httpSession getSession(boolean create) | 현재 Request와 연관된 세션을 리턴, 없을 시 create가 true일 때 새로 생성하여 리턴|
+|httpSession getSession(boolean create) | 현재 Request와 연관된 세션을 리턴, 없을 시 create가 true일 때 새로 생성하여 리턴/false일 때 null 리턴|
 
 <br>
 
