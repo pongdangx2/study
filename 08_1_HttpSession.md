@@ -60,11 +60,28 @@ public class TestController {
 public class TestController {
 
     @GetMapping("/test")
-    public String test(@requestBody String test, HttpSession sessio) {
+    public String test(@requestBody String test, HttpSession session) {
         session.setAttribute("test", "TEST");
         return "Hello world";
     }
 }
 ```
 
+### HttpServletRequest 로부터 생성
 
+* getSession()메서드를 `호출할 때` Session `생성`
+
+```
+
+@Controller
+public class TestController {
+
+    @GetMapping("/test")
+    public String test(@requestBody String test, HttpServletRequest request) {
+
+        HttpSession session = request.getSession(); // 세션 생성
+        session.setAttribute("test", "TEST");
+        return "Hello world";
+    }
+}
+```

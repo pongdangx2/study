@@ -27,11 +27,13 @@ public @interface [어노테이션명]{
 ### 메타 애노테이션의 종류
 
 * `@Retention` : 어느시점까지 영향을 미치는지 결정 (컴파일러가 애노테이션을 다루는 방법 기술)
+
 > 1. RetentionPolicy.SOURCE : 컴파일 전까지 유효
 > 1. RetentionPolicy.CLASS : 컴파일러가 클래스를 참조하는 동안 유효
 > 1. RetentionPolicy.RUNTIME : 컴파일 이후 런타임 시기에도 JVM에 의해 참조 가능(리플렉션)
 
 * `@Target` : 애노테이션을 적용할 위치 선택
+
 > 1. ElementType.PACKAGE : 패키지 선언
 > 1. ElementType.TYPE : 타입 선언
 > 1. ElementType.ANNOTATION_TYPE : 어노테이션 타입 선언
