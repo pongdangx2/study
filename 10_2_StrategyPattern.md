@@ -1,4 +1,4 @@
-# Strategy Pattern (전략패턴)
+# Strategy Pattern (전략 패턴)
 
 ## 전략패턴이란?
 

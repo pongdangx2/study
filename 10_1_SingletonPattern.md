@@ -1,4 +1,4 @@
-# Singleton Pattern
+# Singleton Pattern (싱글톤 패턴)
 
 ## Singleton Pattern이란?
 
