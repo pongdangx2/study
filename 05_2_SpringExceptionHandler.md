@@ -1,8 +1,8 @@
 # Spring Exception Handler
 
-## Spring의 에러처리
+## SpringBoot의 에러처리
 
-* Spring 에는 기본적으로 에러 처리를 위한 `BasicErrorController`가 구현되어 있다.
+* SpringBoot 에는 기본적으로 에러 처리를 위한 `BasicErrorController`가 구현되어 있다.
 * error의 기본 경로는 `/error`로 되어어있으며, Properties에 `server.error.path`로 설정할 수 있다.
 
 <br>
