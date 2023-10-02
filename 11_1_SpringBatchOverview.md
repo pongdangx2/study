@@ -64,12 +64,13 @@ Spring Batch에서는 멱등서을 유지하기 위해 `Spring Batch Job Paramet
 
 <img src=./resource/11_2_BatchDomainModel.png>
 
-`Spring Batch는 메타데이터를 위한 관계형 모델을 제공합니다.`
+- Spring Batch는 메타데이터를 위한 관계형 모델을 제공합니다.
+- 위 그림의 스키마는 Spring Batch 버전에 따라 상이할 수 있습니다.
 
 ### Meta-Data Schema
 
 - 스프링 배치에서 메타데이터를 저장하는 스키마는 다음 문서에 나타나있습니다.
-`https://docs.spring.io/spring-batch/docs/3.0.x/reference/html/metaDataSchema.html`
+`https://docs.spring.io/spring-batch/docs/current/reference/html/schema-appendix.html`
 
 ### Meta-Data 세부 정보
 

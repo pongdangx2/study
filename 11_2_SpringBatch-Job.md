@@ -15,6 +15,7 @@ public interface Job {
 
 - `Job Interface`의 구현체는 Job의 이름(`getName` 메서드)과 Job이 무슨 작업을 수행할지(`execute` 메서드)를 명세해야 합니다.
 - `execute` 메서드는 exception를 발생시켜선 안됩니다. Runtime Exception은 모두 execute 메서드 내에서 `예외처리` 되어야 하고, JobExecution 객체에 추가되어야 합니다.
+- Job의 구현체는 JobRepository에 status와 exit code를 업데이트해야 한다.
 
 ## JobExecution
 
