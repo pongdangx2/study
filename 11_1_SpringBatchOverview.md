@@ -15,6 +15,10 @@
 6. 다양한 Data Source를 지원합니다. <br> DB, 파일, 메시지 큐 등 다양한 Data Source에서 데이터를 추출/처리할 수 있습니다.
 7. Spring framework의 일환이기 때문에 단위테스트와 통합테스트를 수행하기 쉽습니다.
 
+## Spring Boot와 Spring Batch
+
+- Spring Boot는 애플리케이션이 실행될 때, application context에 정의된 `Job` 빈을 모두 자동으로 실행합니다.
+
 ## Spring Batch 와 멱등성
 
 ### 멱등성이란?
