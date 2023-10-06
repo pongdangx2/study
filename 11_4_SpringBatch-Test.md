@@ -6,7 +6,8 @@
 
 ## 배치 테스트의 두가지 종류
 
-### 배치 테스트의 두가지 종류
+### 두가지 방식
+
 - `Job` 전체 테스트 (End to End)
 
 > 테스트할 때 `input data` 를 제공하고, `Job` 을 실행하고, `결과` 를 검증합니다.
@@ -21,7 +22,7 @@
 - 테스트에서 `Job` 혹은 특정 `step` 을 실행하기 위해 `JobLauncerTestUtils` API를 제공합니다.
 - `JobLauncerTestUtils` 는 몇가지 유용한 utilities와 methods를 제공합니다.
 
-#### 1. ***Random Job Parameter Generation*** 
+#### 1. ***Random Job Parameter Generation***
 
 - 테스트할 때 별개의 Job Instance를 생성하기 위해 unique한 Job Parameter를 생성할 수 있습니다.
 
