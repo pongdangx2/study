@@ -31,6 +31,37 @@ JobLauncherTestUtils.getUniqueJobParameters
 JobLauncherTestUtils.getUniqueJobParametersBuilder
 ```
 
+- ex
+
+```Java
+@Test
+void testJobExecution(CapturedOutput output) throws Exception {
+	// given
+	String parameterFileName = "/some/input/file";
+	JobParameters jobParameters = this.jobLauncherTestUtils.getUniqueJobParametersBuilder()
+			.addString("input.file", parameterFileName)
+			.toJobParameters();
+
+	// when
+	JobExecution jobExecution = this.jobLauncherTestUtils.launchJob(jobParameters);
+
+	// then
+	Assertions.assertTrue(output.getOut().contains("processing billing information from file " + parameterFileName));
+	Assertions.assertEquals(ExitStatus.COMPLETED, jobExecution.getExitStatus());
+}
+```
+
+위와 같이 jobLauncherTestUtils.getUniqueJobParametersBuilder() 메서드를 이용하면 테스트를 실행할 때, 등록된 파라미터와 다른 Unique한 파라미터가 함께 생성됩니다.
+
+ |job_execution_id | parameter_name |  parameter_type  |   parameter_value    | identifying|
+ |---|---|---|---|---|
+|49 | random         | java.lang.Long   | -2305569543280804739 | Y|
+|49 | input.file     | java.lang.String | /some/input/file     | Y|
+|51 | random         | java.lang.Long   | 208082855255757609   | Y|
+|51 | input.file     | java.lang.String | /some/input/file     | Y|
+|53 | random         | java.lang.Long   | 6393756363010672354  | Y|
+|53 | input.file     | java.lang.String | /some/input/file     | Y|
+
 #### 2. ***Launching an entire job from end to end***
 
 - `JobLauncherTestUtils.launchJob` 를 사용하면 실제 운영환경에서와 동일하게 Job을 실행할 수 있습니다.
